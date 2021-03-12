@@ -49,7 +49,7 @@ public class SlipAPI { // 교수님꺼
 				System.out.println("token error" + con.getResponseMessage());
 			}
             
-            // Gson 라이브러리에 포함된 클래스로 JSON파싱 객체 생성  "{}"
+            // Gson 라이브러리에 포함된 클래스로 JSON파싱 객체 생성  "{}".
             Gson gson = new Gson();
             map = gson.fromJson(sb.toString(), Map.class);
             
